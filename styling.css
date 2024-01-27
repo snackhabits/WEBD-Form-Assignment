@@ -1,0 +1,111 @@
+/* styling.css */
+
+/* Basic styles for the body and text */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #000000;
+    background-color: #ffffff;
+}
+
+h1, h2 {
+    color: #3885d8;
+}
+
+p {
+    line-height: 1.6;
+}
+
+/* Jumbotron section */
+
+
+.jumbotron {
+    background-color: #ffffff;
+    color: #fff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.jumbotron h1 {
+    font-size: 48px;
+}
+
+.jumbotron p {
+    font-size: 24px;
+}
+
+/* Testimonials section */
+.testimonials {
+    padding: 50px 0;
+    background-color: #ffffff;
+}
+
+.testimonials .row {
+    align-items: center;
+}
+
+.testimonials h2 {
+    font-size: 36px;
+}
+
+.testimonials p {
+    font-size: 18px;
+}
+/* Riders/Drivers section */
+.drivers-riders {
+    padding: 50px 0;
+    background-color: #ffffff;
+}
+
+.drivers-riders .row {
+    align-items: center;
+}
+
+.drivers-riders h2 {
+    font-size: 36px;
+}
+
+.drivers-riders p {
+    font-size: 18px;
+}
+/* FAQ section */
+.faq {
+    padding: 50px 0;
+}
+
+.faq .row {
+    align-items: center;
+}
+
+.faq h2 {
+    font-size: 36px;
+}
+
+.faq p {
+    font-size: 18px;
+}
+
+/* Safety section */
+.safety {
+    padding: 50px 0;
+    background-color: #f8f9fa;
+}
+
+.safety .row {
+    align-items: center;
+}
+
+.safety h2 {
+    font-size: 36px;
+}
+
+.safety p {
+    font-size: 18px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}

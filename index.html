@@ -1,0 +1,154 @@
+<!-- Author: Joey MacDonald
+
+Student ID: W0246251
+
+Course: IT Generalist II    
+
+Date: November 20,2023
+
+Project: Responsive Web Site with Bootstrap 5 Quick Start with Navigation 
+
+Version: HTML Bootstrap 5 
+
+--> 
+
+<!DOCTYPE html> 
+<html lang="en">
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <!--<link rel="stylesheet" href="styling.css"> -->
+    <!-- Bootstrap CSS link --> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <!-- Bootstrap JS (Latest Compiled JavaScript) --> 
+    <script  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js">
+    </script> 
+    <script src="scripts.js"></script>
+    <title>NSCC Journey</title>
+</head> 
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm bg-primary">
+              <div class="container">
+                <a class="navbar-brand" href="#">NSCC Journey</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-nav" aria-controls="navbar-nav"
+                    aria-expanded="true" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbar-nav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#" aria-current="page">Home <span class="visually-hidden">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Need Ride</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Give Ride</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Testimonies</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">FAQs</a>
+                        </li>
+                    </ul>
+                </div>
+                </div>
+        </nav>
+        
+    </header>
+    <main>
+<!--Hero section start-->
+        <section class="HERO">
+            <div class="container col-xl-10 col-xxl-8 px-4 py-5">
+                <div class="row align-items-center g-lg-5 py-5">
+                  <div class="col-lg-7 text-center text-lg-start">
+                    <h1 class="display-4 fw-bold lh-1 ">Sign-Up to Join NSCC Journey!</h1>
+                    <p class="col-lg-10 fs-4"> completing it.</p>
+                  </div>
+                  <div class="col-md-10 mx-auto col-lg-5">
+                    <form name="signupForm" onsubmit="return validateForm()" class="p-4 p-md-5 border rounded-3 bg-light">
+                      <div class="form-floating mb-3">
+                        <input type="username" class="form-control" id="username" placeholder="username">
+                        <label for="username">Username</label>
+                        <p id="usernameError"></p>
+                      </div>
+                      <div class="form-floating mb-3">
+                        <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                        <label for="email">Email address</label>
+                      </div>
+                      <p id="emailError"></p>
+                      <div class="form-floating mb-3">
+                        <input type="password" class="form-control" id="password" placeholder="password">
+                        <label for="password">Password</label>
+                      </div>
+                      <p id="passwordError"></p>
+                      <div class="form-floating mb-3">
+                        <input type="password" class="form-control" id="confirmPassword" placeholder="confirmPassword">
+                        <label for="confirmPassword">Confirm Password</label>
+                      </div>
+                      <p id="confirmError"></p>
+                      <div class="checkbox mb-3">
+                        <label>
+                          <input type="checkbox" value="remember-me"> Remember me
+                        </label>
+                      </div>
+                      <button class="w-100 btn btn-lg btn-primary" type="submit">Sign up</button>
+                      <hr class="my-4">
+                      <small class="text-muted">By clicking Sign up, you agree to the terms of use.</small>
+                    </form>
+                  </div>
+                </div>
+              </div>
+        </section>
+        
+<!--Beginning of Driver/Rider Section-->
+        <section id="drivers-riders">
+            <div class="container">
+                <div class="row justify-content-center align-items-center g-2">
+                    <div class="col"><h2>Drivers & Riders</h2></div>
+                    <div class="col"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae feugiat velit. Vivamus ante augue, porttitor et varius a, viverra vitae neque. Mauris ultrices ultricies tellus, vel placerat diam cursus eget. Aliquam feugiat venenatis nibh, vel pellentesque purus tincidunt at. Integer augue metus, elementum quis.</p></div>
+                    <div class="col"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae feugiat velit. Vivamus ante augue, porttitor et varius a, viverra vitae neque. Mauris ultrices ultricies tellus, vel placerat diam cursus eget. Aliquam feugiat venenatis nibh, vel pellentesque purus tincidunt at. Integer augue metus, elementum quis.</p></div>
+                </div>
+            </div>
+        </section>
+<!--Beginning of Testimonies Section-->
+        <section id="testimonies">
+            <div class="container">
+                <div class="row justify-content-center align-items-center g-2">
+                    <div class="col"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae feugiat velit. Vivamus ante augue, porttitor et varius a, viverra vitae neque. Mauris ultrices ultricies tellus, vel placerat diam cursus eget. Aliquam feugiat venenatis nibh, vel pellentesque purus tincidunt at. Integer augue metus, elementum quis.</p></div>
+                    <div class="col"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae feugiat velit. Vivamus ante augue, porttitor et varius a, viverra vitae neque. Mauris ultrices ultricies tellus, vel placerat diam cursus eget. Aliquam feugiat venenatis nibh, vel pellentesque purus tincidunt at. Integer augue metus, elementum quis.</p></div>
+                    <div class="col"><h2>Testimonies</h2></div>
+                </div>
+            </div>
+        </section>
+<!--Beginning of FAQ Section-->
+        <section id="FAQs">
+            <div class="container">
+                <div class="row justify-content-center align-items-center g-2">
+                    <div class="col"><h2>FAQ</h2></div>
+                    <div class="col"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae feugiat velit. Vivamus ante augue, porttitor et varius a, viverra vitae neque. Mauris ultrices ultricies tellus, vel placerat diam cursus eget. Aliquam feugiat venenatis nibh, vel pellentesque purus tincidunt at. Integer augue metus, elementum quis.</p></div>
+                    <div class="col"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae feugiat velit. Vivamus ante augue, porttitor et varius a, viverra vitae neque. Mauris ultrices ultricies tellus, vel placerat diam cursus eget. Aliquam feugiat venenatis nibh, vel pellentesque purus tincidunt at. Integer augue metus, elementum quis.</p></div>
+                </div>
+            </div>
+        </section>
+<!--Beginning of Safety Section-->
+        <section id="safety">
+            <div class="container">
+                <div class="row justify-content-center align-items-center g-2">
+                    <div class="col"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae feugiat velit. Vivamus ante augue, porttitor et varius a, viverra vitae neque. Mauris ultrices ultricies tellus, vel placerat diam cursus eget. Aliquam feugiat venenatis nibh, vel pellentesque purus tincidunt at. Integer augue metus, elementum quis.</p></div>
+                    <div class="col"><h2>Safety Information</h2></div>
+                    <div class="col"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae feugiat velit. Vivamus ante augue, porttitor et varius a, viverra vitae neque. Mauris ultrices ultricies tellus, vel placerat diam cursus eget. Aliquam feugiat venenatis nibh, vel pellentesque purus tincidunt at. Integer augue metus, elementum quis.</p></div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="container">
+                <p> &copy; 2023 Joey MacDonald</p>
+            </div>
+        </footer>
+    </main>
+    <!-- Bootstrap CSS link --> 
+</body>
+</html>
